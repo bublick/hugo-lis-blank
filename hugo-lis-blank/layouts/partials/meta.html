@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, initial-scale=1.0, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>{{ block "title" . }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>{{ .Title }} - {{ .Site.Title }}</title>
+
+{{ block "meta_tags" . }}{{end}}
+
+<!-- HEAD SCRIPTS START -->
+<script>
+    console.log("Go Hugo!");
+</script>
+<!-- HEAD SCRIPTS END -->
+
+{{ if eq (hugo.Environment) "production" }}
+
+{{ end }}

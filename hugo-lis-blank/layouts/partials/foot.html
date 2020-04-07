@@ -1,0 +1,4 @@
+{{ $script := resources.Get "js/script.js"}}
+{{ $script = $script | minify | fingerprint }}
+
+<script type="text/javascript" src="{{ $script.Permalink }}"></script>

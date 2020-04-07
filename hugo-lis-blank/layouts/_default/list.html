@@ -1,0 +1,15 @@
+
+{{ define "body_class" }}list-template{{ end }}
+
+{{ define "main" }}
+
+    <h1>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h1>
+
+    {{ range .Pages }}
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <br>
+    {{ end }}
+
+{{ end }}
