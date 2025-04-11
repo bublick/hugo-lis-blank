@@ -1,2 +1,3 @@
-# hugo-lis-blank
-Skeleton theme (i.e. basis) for Hugo themes
+# Overview
+
+This is a template for custom developments.
